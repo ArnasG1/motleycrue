@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mötley Crüe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="title">Mötley Crüe</h1>
+    <br />
+    <br />
+    <h2>Some videos about the group</h2>
+    <br />
+    <iframe
+      width="500"
+      height="250"
+      src="https://www.youtube.com/embed/0KWs7JRtjD4?si=xZxuqipNBM1p8X_v"
+      title="YouTube video player"
+      frameborder="0"
+      allowfullscreen
+      loading="lazy"
+    ></iframe>
+    <iframe
+      width="500"
+      height="250"
+      src="https://www.youtube.com/embed/xtGbXH5DZHc?si=5mo5PHD_NJIQUBHN"
+      title="YouTube video player"
+      frameborder="0"
+      allowfullscreen
+      loading="lazy"
+    ></iframe>
+    <iframe
+      width="500"
+      height="250"
+      src="https://www.youtube.com/embed/r5rW0ovF2ns?si=rxZbycvi341nsgZ7"
+      title="YouTube video player"
+      frameborder="0"
+      allowfullscreen
+      loading="lazy"
+    ></iframe>
+    <br />
+    <h2>The most popular songs</h2>
+    <br />
+    <p>Mötley Crüe - Kickstart My Heart</p>
+    <audio src="songs/song1.mp3" controls></audio>
+    <p>Mötley Crüe - Home Sweet Home</p>
+    <audio src="songs/song2.mp3" controls></audio>
+    <p>Mötley Crüe - Wild Side</p>
+    <audio src="songs/song3.mp3" controls></audio>
+    <br />
+    <br />
+    <br />
+    <h1>Register for a chance to win Mötley Crüe's album!</h1>
+    <br />
+    <br />
+    <main>
+      <form action="submit.html">
+        <h2>Registration form</h2>
+        <input type="text" name="name" placeholder="Name" autocomplete="off" />
+        <input
+          type="text"
+          name="birthdate"
+          placeholder="Birthdate"
+          autocomplete="off"
+          onfocus="this.type = 'date'"
+        />
+        <select name="gender" id="gender">
+          <option value="" disabled selected>Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+        <input
+          type="email"
+          name="email"
+          placeholder="Email"
+          autocomplete="off"
+        />
+        <input
+          type="number"
+          name="phone"
+          placeholder="Phone"
+          autocomplete="off"
+        />
+        <br />
+        <br />
+        <p>why we should choose you as a winner?</p>
+        <textarea
+          name="comments"
+          cols="30"
+          rows="10"
+          placeholder="Enter text here"
+        ></textarea>
+        <br />
+
+        <label for="conditions">Agree with <a href="#">terms?</a></label>
+        <input type="checkbox" name="conditions" id="conditions" required />
+
+        <br />
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
+  </body>
+</html>
